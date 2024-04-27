@@ -18,8 +18,10 @@
             right = len(arr) - 1
             #loop till elemtns found
             while left <= right:
+                #split the array
                 mid = (left + right) // 2
                 
+                #return mid if target and mid is same
                 if arr[mid] == target:
                     return mid
                 elif arr[mid] < target:
@@ -41,10 +43,14 @@ Initialize two pointers, left and right, representing the left and right indices
 
 # 3. Search Process:
 * While the left pointer is less than or equal to the right pointer, perform the following steps:
-        * Calculate the middle index as (left + right) // 2.
-        * If the middle element is equal to the target, return the middle index.
-        * If the middle element is less than the target, update the left pointer to mid + 1.
-        * If the middle element is greater than the target, update the right pointer to mid - 1.
+        * 1. Calculate the middle index as (left + right) // 2.
+
+        * 2. If the middle element is equal to the target, return the middle index.
+
+        * 3. If the middle element is less than the target, update the left pointer to mid + 1.
+
+        * 4. If the middle element is greater than the target, update the right pointer to mid - 1.
+        
 * 4. If target vaue does not found returne -1
 
 
