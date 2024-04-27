@@ -1,3 +1,4 @@
+#Perform binary search on a sorted array.
 def binary_search(arr,target):
     left = 0
     right = len(arr)-1
@@ -18,4 +19,5 @@ arr = [2, 4, 6, 8, 10, 12, 14, 16]
 target = 17
 res = binary_search(arr,target)
 print(res)
+
 
